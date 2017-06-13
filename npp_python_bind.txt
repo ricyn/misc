@@ -1,0 +1,30 @@
+@ECHO off
+
+SET PATH="%~dp0";%PATH%
+python %*
+
+IF NOT {%*}=={} PAUSE
+
+******************************************************
+
+Npp var used for "Run..." commands
+Format $(VAR)
+
+FULL_CURRENT_PATH
+　　the fully qualified path to the current document.
+CURRENT_DIRECTORY
+　　The directory the current document resides in.
+FILE_NAME
+　　The filename of the document, without the directory.
+NAME_PART
+　　The filename without the extension.
+EXT_PART
+　　The extension of the current document.
+NPP_DIRECTORY
+　　The directory that contains the notepad++.exe executable that is currently running.
+CURRENT_WORD
+　　The currently selected text in the document.
+CURRENT_LINE
+　　The current line number that is selected in the document (0 based index, the first line is 0).
+CURRENT_COLUMN
+　　The current column the cursor resides in (0 based index, the first position on the line is 0).
